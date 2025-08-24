@@ -3,117 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Site</title>
+  <title>Epic the Restaurant — Home</title>
   <link href="styles.css" rel="stylesheet" />
 </head>
-<body>
-    <div class="owner-badge">
-        <p>Owner</p>
-        <img src="https://placehold.co/160x160?text=Owner" alt="Odysseus">
+<body class="home-body">
+<!-- Top Navigation -->
+<div class="home-top">
+  <div class="home-row home-padding home-black">
+    <div class="home-col home-col-3">
+      <a href="about.html" class="home-button home-block home-black">ABOUT</a>
     </div>
-        <header>
-            <h1>Epic the Restaurant</h1>
-        </header>
-        <nav class="site-nav">
-            <h3><a href="#categories">Categories</a></h3>
-            <h3><a href="#products">Products</a></h3>
-            <h3><a href="#cart">Cart</a></h3>
-        </nav>
-        <main class="layout">
-            <section id="categories" class="categories-section">
-                <h2>Menu Categories</h2>
-                <ul class="category-list">
-                    <li><a href="#products">Chef Special</a></li>
-                    <li><a href="#products">Best Sellers</a></li>
-                    <li><a href="#products">Combos</a></li>
-                </ul>
-            </section>
-            <section id="products" class="products-section">
-                <h2>Chef Special</h2>
-                <div class="products-grid">
-                    <article class="product-card">
-                        <div class="item-header">
-                            <img class="diet-dot" src="images/nonveg.svg" alt="Non-Veg">
-                            <h3>Pigalicious Pig</h3>
-                        </div>
-                        <figure>
-                            <img src="https://placehold.co/400x300?text=Pigs" alt="Picture of Pigs" loading="lazy">
-                            <figcaption>Straight from Circe's farm!</figcaption>
-                        </figure>
-                        <div class="item-controls">
-                            <span class="price">$13.00</span>
-                            <input class="qty-input" type="number" min="1" value="1" aria-label="Quantity for Pigalicious Pig">
-                            <button class="add-btn" type="button">Add</button>
-                            <button class="minus-btn" type="button" aria-label="Decrease Pigalicious Pig by 1">-</button>
-                            <button class="remove-btn" type="button" aria-label="Remove Pigalicious Pig">Remove</button>
-                        </div>
-                        <p>Fresh pork which was totally not human before! Juicy and delicious!</p>
-                    </article>
-                    <article class="product-card">
-                        <div class="item-header">
-                            <img class="diet-dot" src="images/veg.svg" alt="Veg">
-                            <h3>Golden Cow</h3>
-                        </div>
-                        <figure>
-                            <img src="https://placehold.co/400x300?text=Golden+Cow" alt="cow" loading="lazy">
-                            <figcaption>It really is golden!</figcaption>
-                        </figure>
-                        <div class="item-controls">
-                            <span class="price">$15.00</span>
-                            <input class="qty-input" type="number" min="1" value="1" aria-label="Quantity for Golden Cow">
-                            <button class="add-btn" type="button">Add</button>
-                            <button class="minus-btn" type="button" aria-label="Decrease Golden Cow by 1">-</button>
-                            <button class="remove-btn" type="button" aria-label="Remove Golden Cow">Remove</button>
-                        </div>
-                        <p>Juicy meat, so good it tastes as though it is blessed by god itself! Just don't worry too much if the day starts feeling hot all of a sudden!</p>
-                    </article>
-                </div>
-            </section>
-            <section id="cart" class="cart-section content-area">
-                <h3>Your Cart</h3>
-                <form id="order-form">
-                    <label for="pigalicious-qty">Number of Pigalicious Pig plates:</label>
-                    <input type="number" id="pigalicious-qty" min="0" value="0">
-                    <br><br>
-                    <label for="golden-cow-qty">Number of Golden Cow plates:</label>
-                    <input type="number" id="golden-cow-qty" min="0" value="0"><br>
-                    <br><br>
-                    <h4>Add Ons</h4>
-                        <input type="checkbox" id="Ketchup">
-                        <label for="Ketchup">Ketchup</label>
-                        <br><br>
-                        <input type="checkbox" id="Mayo">
-                        <label for="Mayo">Mayo</label>
-                        <br><br>
-                        <input type="checkbox" id="Mustard">
-                        <label for="Mustard">Mustard</label>
-                        <br><br>
-                    <h4>Sides</h4>
-                        <input type="radio" name="Choice" id="cry">
-                        <label for="cry">Odysseus' Tears</label>
-                        <br><br>
-                        <input type="radio" name="Choice" id="travel">
-                        <label for="travel">20 years of Travel</label>
-                        <br><br>
-                        <input type="radio" name="Choice" id="gods">
-                        <label for="gods">The wrath of the Gods</label>
-                        <br><br>
-                </form>
-                <div class="coupon">
-                    <label for="coupon-code">Coupon code</label>
-                    <div class="coupon-row">
-                        <input type="text" id="coupon-code" placeholder="Enter code">
-                        <button id="apply-coupon" type="button">Apply</button>
-                        <span id="coupon-status" role="status" aria-live="polite"></span>
-                    </div>
-                </div>
-                <div id="order-summary" aria-live="polite" aria-atomic="true"></div>
-                <button id="place-order-btn" class="place-order-btn" type="button">Proceed to Pay</button>
-            </section>
-        </main>
-        <footer>
-            <p>Made with love by: Unknown26</p>
-        </footer>
-        <script src="main.js" defer></script>
-    </body>
+    <div class="home-col home-col-3">
+      <a href="menu.html" class="home-button home-block home-black">MENU</a>
+    </div>
+    <div class="home-col home-col-3">
+      <a href="where.html" class="home-button home-block home-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Restaurant Name -->
+<div class="home-banner-title">The Epic Restaraunt</div>
+
+<!-- Inline hero image -->
+<div style="background: url('images/suitor.jpg') center/cover no-repeat; min-height: 520px;"></div>
+<div class="home-center home-padding"><span class="home-tag">Open from 10am to 11pm</span></div>
+<div class="home-center"><span class="home-hero-title">Epic The Restaurant</span></div>
+<div class="home-center home-padding"><span class="home-hero-sub">1522, Street 9, Bangalore</span></div>
+<script src="home.js" defer></script>
+</body>
 </html>
