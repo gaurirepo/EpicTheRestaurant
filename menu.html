@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu — Epic the Restaurant</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="app-header">
+      <!-- Top Navigation -->
+    <div class="home-top">
+      <div class="home-row home-padding home-black">
+        <div class="home-col home-col-3">
+          <a href="home.html" class="home-button home-block home-black">HOME</a>
+        </div>
+        <div class="home-col home-col-3">
+          <a href="about.html" class="home-button home-block home-black">ABOUT</a>
+        </div>
+      
+        <div class="home-col home-col-3">
+          <a href="where.html" class="home-button home-block home-black">WHERE</a>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <main class="layout">
+      <aside id="menu-categories" class="categories-section">
+        <h2>Categories</h2>
+        <ul class="category-list" id="categoryList"></ul>
+      </aside>
+
+      <section id="menu-products" class="products-section">
+        <h2 id="categoryTitle">Menu</h2>
+        <div class="products-grid" id="productsGrid"></div>
+      </section>
+
+      <aside id="menu-cart" class="cart-section">
+        <h3>Your Cart</h3>
+        <div id="cartItems"></div>
+        <div id="cartSummary" class="cart-summary"></div>
+        <button id="checkoutBtn" class="place-order-btn" type="button">Checkout</button>
+      </aside>
+    </main>
+
+    <script src="menu.js" defer></script>
+  </body>
+  </html>
+
+
