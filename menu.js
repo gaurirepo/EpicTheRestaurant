@@ -22,7 +22,7 @@
     { id: 'paradisepunch', name: 'Paradise Punch', price: 15.5, image: 'images/paradisepunch.jpg', diet: 'veg', category: 'beverages' },
     { id: 'redvelvet', name: 'Red Velvet Bundt Cake', price: 18.5, image: 'images/redvelvet.jpg', diet: 'veg', category: 'desserts' },
     { id: 'moussewreath', name: 'Mint Chocolate Mousse Wreath', price: 15.0, image: 'images/moussewreath.jpg', diet: 'veg', category: 'desserts' },
-    { id: 'mousecrunch', name: ' Mouse Crunch', price: 12.5, image: 'images/moussewreath.jpg', diet: 'veg', category: 'desserts' },
+    { id: 'mousecrunch', name: ' Mouse Crunch', price: 12.5, image: 'images/moussecrunch.jpg', diet: 'veg', category: 'desserts' },
     { id: 'pannacotta', name: 'Panna cotta', price: 15.5, image: 'images/pannacotta.jpg', diet: 'veg', category: 'desserts' }
   ];
 
