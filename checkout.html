@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout — Epic the Restaurant</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="container header-bar">
+        <div class="brand"><span class="brand-mark">🍽️</span><span class="brand-name">Epic the Restaurant</span></div>
+        <nav class="top-nav">
+          <a href="home.html">Home</a>
+          <a href="menu.html">Menu</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container checkout">
+      <h1>Checkout</h1>
+      <section class="checkout-grid">
+        <div class="checkout-card">
+          <h2>Order Summary</h2>
+          <div id="summary"></div>
+        </div>
+        <div class="checkout-card">
+          <h2>Payment</h2>
+          <form id="payForm" novalidate>
+            <label for="nameOnCard">Name on Card</label>
+            <input id="nameOnCard" name="nameOnCard" type="text" autocomplete="cc-name" required aria-required="true">
+
+            <label for="cardNumber">Card Number</label>
+            <input id="cardNumber" name="cardNumber" type="text" inputmode="numeric" pattern="[0-9 ]{12,19}" autocomplete="cc-number" required aria-required="true" placeholder="4242 4242 4242 4242">
+
+            <div class="form-row">
+              <div class="form-col">
+                <label for="exp">Expiry (MM/YY)</label>
+                <input id="exp" name="exp" type="text" inputmode="numeric" autocomplete="cc-exp" required aria-required="true" placeholder="12/30">
+              </div>
+              <div class="form-col">
+                <label for="cvc">CVC</label>
+                <input id="cvc" name="cvc" type="text" inputmode="numeric" autocomplete="cc-csc" required aria-required="true" placeholder="123">
+              </div>
+            </div>
+
+            <button class="place-order-btn" type="submit">Pay Now</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="checkout.js" defer></script>
+  </body>
+  </html>
+
+

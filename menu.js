@@ -137,12 +137,22 @@
       itemsEl.appendChild(row);
     }
     summaryEl.innerHTML = `<span>Total</span><span>${format(total)}</span>`;
+    // Persist lightweight cart for checkout
+    const out = [];
+    for (const [id, qty] of state.cart.entries()) {
+      const p = PRODUCTS.find((x) => x.id === id);
+      if (!p) continue;
+      out.push({ id, name: p.name, price: p.price, qty, line: qty * p.price });
+    }
+    localStorage.setItem('epic_cart', JSON.stringify({ items: out, total }));
   }
 
   function init() {
     renderCategories();
     renderProducts();
     renderCart();
+    const checkoutBtn = document.getElementById('checkoutBtn');
+    if (checkoutBtn) checkoutBtn.addEventListener('click', () => { window.location.href = 'checkout.html'; });
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
