@@ -17,7 +17,7 @@
     { id: 'lotusstem', name: 'Lotus Stem', price: 17.5, image: 'images/lotusfruit.jpg', diet: 'veg', category: 'mains' },
     { id: 'farmburger', name: 'The Farm Burger', price: 17.5, image: 'images/farmburger.jpg', diet: 'veg', category: 'mains' },
     { id: 'suitordish', name: 'A Suitors Dish', price: 37.5, image: 'images/suitor.jpg', diet: 'nonveg', category: 'mains' },
-    { id: 'pinnacolada', name: 'Pinnacolada', price: 12.5, image: 'images/pinnacolada.jpg', diet: 'veg', category: 'beverages' },
+    { id: 'pinnacolada', name: 'Pinnacolada', price: 12.5, image: 'images/pinnacolada.png', diet: 'veg', category: 'beverages' },
     { id: 'fruittriangle', name: 'Fruit Triangle', price: 18.5, image: 'images/fruittriangle.jpg', diet: 'veg', category: 'beverages' },
     { id: 'paradisepunch', name: 'Paradise Punch', price: 15.5, image: 'images/paradisepunch.jpg', diet: 'veg', category: 'beverages' },
     { id: 'redvelvet', name: 'Red Velvet Bundt Cake', price: 18.5, image: 'images/redvelvet.jpg', diet: 'veg', category: 'desserts' },
